@@ -5,25 +5,25 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Biblioteca {
-    private ArrayList<Carte> carti;
+    private ArrayList<Carte> lista_carti;
 
     public void sort()
     {
-        Collections.sort(carti);
+        Collections.sort(lista_carti);
     }
 
     public Biblioteca() {
-        carti = new ArrayList<Carte>();
+        lista_carti = new ArrayList<Carte>();
     }
 
     public void add(Carte carte)
     {
-        carti.add(carte);
+        lista_carti.add(carte);
     }
 
     public void removeBook(Carte c)
     {
-        carti.remove(c);
+        lista_carti.remove(c);
     }
 
     @Override
@@ -31,7 +31,7 @@ public class Biblioteca {
         StringBuilder builder = new StringBuilder();
         builder.append("Biblioteca contine:\n");
 
-        for (Carte c : carti)
+        for (Carte c : lista_carti)
         {
             builder.append(c.toString());
             builder.append('\n');
