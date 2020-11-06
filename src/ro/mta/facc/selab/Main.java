@@ -9,10 +9,11 @@ public class Main {
         biblioteca.add(carte);
         biblioteca.add(new Carte("Procesul", "F. Kafka", 1910, 350));
         biblioteca.add(new Carte("Ender's Game", "Orscon Scott Card", 1954, 330));
-
 		biblioteca.add(carte2);
+		biblioteca.add(carte);
+
         biblioteca.sort();
-        // System.out.println(biblioteca);
+        System.out.println(biblioteca);
 
         Thread thr = new MyThread();
 
